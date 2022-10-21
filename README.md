@@ -14,11 +14,11 @@ Python 3.x.x+
 ## Run (Use) on your local machine
 First clone the repository
 ```sh
-   $ git clone 
+   $ git clone https://github.com/lytes20/ramani-talks-round-one-demo-api.git
    ```
    Head over to the cloned directory, create a virtual environment, use pip to install the requirements, the run the app
    ```sh
-    $ cd orders-api
+    $ cd ramani-talks-round-one-demo-api
     $ virtualenv venv
     $ source venv/bib/activate
     $ pip install -r requirements.txt
