@@ -1,6 +1,8 @@
 from flask import Flask, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 orders = [{"product_name": "Ukwaju", "quantity": 10},
           {"product_name": "Tanga Fresh Maziwa", "quantity": 10}]
@@ -13,7 +15,7 @@ def hello_world():
     return "Hakuna Matata"
 
 
-@app.get("/api/login")
+@app.post("/api/login")
 def login():
     data = request.get_json()
     username = data.get("username")
